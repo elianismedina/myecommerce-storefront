@@ -30,7 +30,7 @@ const Info: React.FC<InfoProps> = ({ data }) => {
       <hr className="my-4" />
       <div className="flex flex-col gap-y-6">
         <div className="flex items-center gap-x-4">
-          <h3 className="font-semibold text-black">Size:</h3>
+          <h3 className="font-semibold text-black">Tamaño:</h3>
           <div>{data?.size?.value}</div>
         </div>
         <div className="flex items-center gap-x-4">
@@ -42,12 +42,20 @@ const Info: React.FC<InfoProps> = ({ data }) => {
         </div>
       </div>
       <div className="mt-10 flex items-center gap-x-3">
-        <Button onClick={onAddToCart} className="flex items-center gap-x-2">
-          Añadir a la bolsa
-          <ShoppingCart size={20} />
+        <Button
+          onClick={onAddToCart}
+          className="flex items-center gap-x-6 text-lg"
+        >
+          Añadir al carrito
+          <ShoppingCart size={30} />
         </Button>
-        <Button onClick={() => {}} className="flex items-center gap-x-2">
-          Asistencia personalizada
+      </div>
+      <div className="mt-4 flex items-center gap-x-3">
+        <Button
+          onClick={() => {}}
+          className="flex items-center gap-x-2 bg-white text-black border border-slate-600"
+        >
+          Asesoría personalizada
           <BsWhatsapp size={20} />
         </Button>
       </div>
