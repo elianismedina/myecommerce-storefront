@@ -10,7 +10,12 @@ const font = Urbanist({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
   title: "A&E cueros",
-  description: "A&E cueros store",
+  description: "A&E cueros tienda",
+  manifest: "/manifest.json",
+  icons: {
+    apple: "/icon.png",
+  },
+  themeColor: "#000000",
 };
 
 export default function RootLayout({
