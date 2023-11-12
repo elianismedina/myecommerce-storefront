@@ -2,11 +2,11 @@
 
 import { ShoppingCart } from "lucide-react";
 import { BsWhatsapp } from "react-icons/bs";
-
 import Currency from "@/components/ui/currency";
 import Button from "@/components/ui/button";
 import { Product } from "@/types";
 import useCart from "@/hooks/use-cart";
+import Link from "next/link";
 
 interface InfoProps {
   data: Product;
@@ -40,24 +40,28 @@ const Info: React.FC<InfoProps> = ({ data }) => {
             style={{ backgroundColor: data?.color?.value }}
           />
         </div>
+        <div className="flex items-center gap-x-4">
+          <h3 className="font-semibold text-black">Descripción:</h3>
+          <div>{data?.description}</div>
+        </div>
       </div>
+      <hr className="my-4" />
       <div className="mt-10 flex items-center gap-x-3">
         <Button
           onClick={onAddToCart}
-          className="flex items-center gap-x-6 text-lg"
+          className="flex items-center gap-x-4 text-lg"
         >
           Añadir al carrito
-          <ShoppingCart size={30} />
+          <ShoppingCart size={20} />
         </Button>
       </div>
       <div className="mt-4 flex items-center gap-x-3">
-        <Button
-          onClick={() => {}}
-          className="flex items-center gap-x-2 bg-white text-black border border-slate-600"
-        >
-          Asesoría personalizada
-          <BsWhatsapp size={20} />
-        </Button>
+        <Link href="https://wa.me/573008828214" target="_blank">
+          <Button className="flex items-center gap-x-4 text-md bg-white text-black border border-gray-900">
+            Asesoría personalizada
+            <BsWhatsapp size={20} color="green" />
+          </Button>
+        </Link>
       </div>
     </div>
   );

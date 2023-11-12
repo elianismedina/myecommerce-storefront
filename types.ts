@@ -2,7 +2,10 @@ export interface Product {
   id: string;
   category: Category;
   name: string;
+  description: string;
+  style: string;
   price: string;
+  inventory: number;
   isFeatured: boolean;
   size: Size;
   color: Color;
