@@ -8,7 +8,7 @@ const MovingText = () => {
     >
       <div className={`${styles.horizontal_scrolling_items} space-x-2`}>
         <div className={`${styles.horizontal_scrolling_items_item}`}>
-          20% DESCUENTO | comprar ahora
+          hasta 20% DSCTO
         </div>
 
         <div className={`${styles.horizontal_scrolling_items_item}`}>
