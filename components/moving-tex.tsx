@@ -8,11 +8,11 @@ const MovingText = () => {
     >
       <div className={`${styles.horizontal_scrolling_items} space-x-4`}>
         <div className={`${styles.horizontal_scrolling_items_item}`}>
-          20% DESCUENTO en toda la tienda
+          20% DESCUENTO|comprar ahora
         </div>
 
         <div className={`${styles.horizontal_scrolling_items_item}`}>
-          Envios gratis a todo el país por compras mayores a $100.000
+          Envios gratis por compras mayores a $100.000
           <GiColombia className="inline-block ml-2" size={20} />
         </div>
       </div>
