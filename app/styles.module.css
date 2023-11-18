@@ -9,7 +9,7 @@
 .horizontal_scrolling_items{
     display: flex;
     animation-name: infiniteScroll;
-    animation-duration: 20s;
+    animation-duration: 15s;
     animation-iteration-count: infinite;
     animation-timing-function: linear;
 
