@@ -14,6 +14,7 @@
     "clsx": "^2.0.0",
     "framer-motion": "^10.16.4",
     "lucide-react": "^0.292.0",
+    "mercadopago": "^2.0.6",
     "next": "14.0.1",
     "query-string": "^8.1.0",
     "react": "^18",
