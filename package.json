@@ -25,6 +25,7 @@
     "react-icons": "^4.11.0",
     "react-intersection-observer": "^9.5.3",
     "react-whatsapp": "^0.3.0",
+    "stripe": "^14.12.0",
     "tailwind-merge": "^2.0.0",
     "use-router": "^0.4.2",
     "zustand": "^4.4.6"
