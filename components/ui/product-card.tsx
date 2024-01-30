@@ -10,6 +10,7 @@ import IconButton from "@/components/ui/icon-button";
 import usePreviewModal from "@/hooks/use-preview-modal";
 import useCart from "@/hooks/use-cart";
 import { Product } from "@/types";
+import { Badge } from "@/components/ui/badge";
 
 interface ProductCard {
   data: Product;
@@ -70,6 +71,9 @@ const ProductCard: React.FC<ProductCard> = ({ data }) => {
       </div>
       {/* Price & Review */}
       <div className="flex items-center justify-center text-lg border rounded-full p-2 bg-slate-200">
+        <Badge variant="outline" className="bg-red-400 mx-4 text-sm">
+          Oferta
+        </Badge>
         <Currency value={data?.price} />
       </div>
     </div>
