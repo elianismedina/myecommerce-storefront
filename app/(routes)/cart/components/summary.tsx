@@ -40,10 +40,7 @@ const Summary = () => {
           <Currency value={totalPrice} />
         </div>
       </div>
-      <Link
-        href={"https://checkout.wompi.co/l/test_VPOS_ZW7krr"}
-        passHref={true}
-      >
+      <Link href={"https://checkout.wompi.co/l/VPOS_u9qB27"} passHref={true}>
         <Button disabled={items.length === 0} className="w-full mt-6">
           Finalizar compra
         </Button>
