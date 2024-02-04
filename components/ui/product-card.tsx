@@ -43,7 +43,7 @@ const ProductCard: React.FC<ProductCard> = ({ data }) => {
       className="bg-white group cursor-pointer rounded-xl border p-3 space-y-4"
     >
       {/* Image & actions */}
-      <div className="aspect-square rounded-xl bg-gray-100 relative">
+      <div className="aspect-square rounded-lg bg-gray-100 relative">
         <Image
           src={data.images?.[0]?.url}
           alt=""
@@ -70,8 +70,8 @@ const ProductCard: React.FC<ProductCard> = ({ data }) => {
         <p className="text-sm text-gray-500 mt-2">Ref: {data.style}</p>
       </div>
       {/* Price & Review */}
-      <div className="flex items-center justify-center text-lg border rounded-full p-2 bg-slate-200">
-        <Badge variant="outline" className="bg-red-400 mx-4 text-sm">
+      <div className="flex items-center justify-center text-lg border rounded-lg p-2 bg-slate-200">
+        <Badge variant="outline" className="bg-red-400 text-xs">
           Oferta
         </Badge>
         <Currency value={data?.price} />
