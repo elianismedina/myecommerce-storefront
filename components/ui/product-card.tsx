@@ -71,7 +71,7 @@ const ProductCard: React.FC<ProductCard> = ({ data }) => {
       </div>
       {/* Price & Review */}
       <div className="flex items-center justify-center text-lg border rounded-lg p-2 bg-slate-200">
-        <Badge variant="outline" className="bg-red-400 text-xs">
+        <Badge variant="outline" className="bg-red-400 text-xs mx-2">
           Oferta
         </Badge>
         <Currency value={data?.price} />
